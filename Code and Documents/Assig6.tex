@@ -43,20 +43,20 @@ Show that if R(r) is the inverse Fourier transform of a function $S(\omega)$ and
 \textbf{Proof.}
 We know that,
 \begin {align}
-&\int_{-\infty}^{\infty}S(\omega) |\sum_{i}^{} a_i e^{j \omega \tau_i}|,d(\omega)\geq 0
+&\int_{-\infty}^{\infty}S(\omega) |\sum_{i}^{} a_i e^{j \omega \tau_i}|d(\omega)\geq 0
 \end {align}
 And,
 \begin {align}
-&\int_{-\infty}^{\infty}S(\omega) | \sum_{i}^{} a_i e^{j \omega \tau_i}|,d(\omega) 
+&\int_{-\infty}^{\infty}S(\omega) | \sum_{i}^{} a_i e^{j \omega \tau_i}|d(\omega) 
 \end {align}
 \begin {align}
-&= \int_{-\infty}^{\infty}S(\omega) | \sum_{i,k}^{} a_i a_k^{*} e^{j \omega (\tau_i-\tau_k)}| ,d(\omega)
+&= \int_{-\infty}^{\infty}S(\omega) | \sum_{i,k}^{} a_i a_k^{*} e^{j \omega (\tau_i-\tau_k)}| d(\omega)
 \end {align}
 
 Now, we know that,
 
 \begin {align}
-&\int_{-\infty}^{\infty}S(\omega) | \sum_{i,k}^{} a_i a_k^{*} e^{j \omega (\tau_i-\tau_k)}| ,d(\omega)\\
+&\int_{-\infty}^{\infty}S(\omega) | \sum_{i,k}^{} a_i a_k^{*} e^{j \omega (\tau_i-\tau_k)}| d(\omega)\\
 &=\sum_{i,k}^{} a_i a_k^{*} R(\tau_i - \tau_k)
 \end {align}
 From (2) and (6),
