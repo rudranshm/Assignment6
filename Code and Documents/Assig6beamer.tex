@@ -1,0 +1,67 @@
+% Inbuilt themes in beamer
+\documentclass{beamer}
+
+% Theme choice:
+\usetheme{CambridgeUS}
+
+% Title page details: 
+\title{Assignment 6}
+\subtitle{\Large AI1110: Probability and Random Variables \\ \large Indian Institute of Technology Hyderabad}
+\author{Rudransh Mishra \\ \normalsize AI21BTECH11025 \\ \vspace*{20pt} \normalsize  15 June 2022 \\ \vspace*{20pt} PROBABILITY, RANDOM VARIABLES, AND STOCHASTIC PROCESSES\\ \normalsize Athanasios Papoulis}
+\date{\today}
+\logo{\large \LaTeX{}}
+
+
+\begin{document}
+
+% Title page frame
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+% Remove logo from the next slides
+\logo{}
+
+
+% Question frame
+\section{Question}
+\begin{frame}{Question}
+\begin{block}{Example 9-38}
+Show that if R(r) is the inverse Fourier transform of a function $S(\omega)$ and $S(\omega) \geq 0$, then, for any a_i,\\
+\begin{align}
+&\sum_{i,k}^{} a_i a_k^{*} R(\tau_i - \tau_k) \geq 0
+\end{align}
+\end{block}
+\end{frame}
+
+% Solution frames
+\begin{frame}{Proof}
+\textbf{Proof.}
+We know that,
+\begin {align}
+&\int_{-\infty}^{\infty}S(\omega) |\sum_{i}^{} a_i e^{j \omega \tau_i}|,d(\omega)\geq 0
+\end {align}
+And,
+\begin {align}
+&\int_{-\infty}^{\infty}S(\omega) | \sum_{i}^{} a_i e^{j \omega \tau_i}|,d(\omega) = \int_{-\infty}^{\infty}S(\omega) | \sum_{i,k}^{} a_i a_k^{*} e^{j \omega (\tau_i-\tau_k)}| ,d(\omega)
+\end {align}
+\end{frame}
+\begin{frame}{Proof(contd.)}
+
+\begin{center}
+Now, we know that,
+
+\begin {align}
+&\int_{-\infty}^{\infty}S(\omega) | \sum_{i,k}^{} a_i a_k^{*} e^{j \omega (\tau_i-\tau_k)}| ,d(\omega)=\sum_{i,k}^{} a_i a_k^{*} R(\tau_i - \tau_k)
+\end {align}
+From (2) and (4),
+\begin {align}
+&\sum_{i,k}^{} a_i a_k^{*} R(\tau_i - \tau_k) \geq 0
+\end {align}
+and the proof is complete.
+\end{center}
+
+\end{frame}
+\end{document}
+
+\end{document}
